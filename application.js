@@ -3,7 +3,7 @@ var express = require('express');
 var cors = require('cors');
 
 // Securable endpoints: list the endpoints which you want to make securable here
-var securableEndpoints = ['hello'];
+var securableEndpoints = [];
 
 var app = express();
 
@@ -17,7 +17,7 @@ app.use('/mbaas', mbaas.mbaas);
 // Note: important that this is added just before your own Routes
 app.use(mbaas.fhmiddleware());
 
-app.use('/hello', require('./lib/hello.js')());
+app.use('/recordTest', require('./lib/recordTest.js')());
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
