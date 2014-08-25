@@ -12,11 +12,11 @@ var app = express();
 app.use(cors());
 
 // Note: the order which we add middleware to Express here is important!
-app.use('/sys', express.sys(securableEndpoints));
-app.use('/mbaas', express.mbaas);
+app.use('/sys', mbaasExpress.sys(securableEndpoints));
+app.use('/mbaas', mbaasExpress.mbaas);
 
 // Note: important that this is added just before your own Routes
-app.use(express.fhmiddleware());
+app.use(mbaasExpress.fhmiddleware());
 
 app.use('/recordTest', require('./lib/recordTest.js')());
 
@@ -26,7 +26,7 @@ app.use('/', function(req, res) {
 });
 
 // Important that this is last!
-app.use(express.errorHandler());
+app.use(mbaasExpress.errorHandler());
 
 var port = process.env.FH_PORT || process.env.VCAP_APP_PORT || 8001;
 var server = app.listen(port, function() {
