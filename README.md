@@ -4,6 +4,10 @@ This is the cloud app for the Mobile Spec project.
 
 # Group APIs
 
+# recordTest [/recordTest]
+
+Record test endpoint
+
 ## recordTest [POST] 
 
 Endpoint to record test result to db.
@@ -49,6 +53,10 @@ Endpoint to record test result to db.
             {
               
             }
+
+# listTests [/listTests]
+
+List tests endpoint
 
 ## listTests [GET]
 
