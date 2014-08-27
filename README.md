@@ -1,16 +1,16 @@
-# FeedHenry Hello World MBaaS Server
+# FeedHenry Mobile Spec Cloud App
 
-This is a blank 'hello world' FeedHenry MBaaS. Use it as a starting point for building your APIs. 
+This cloud provides APIs for the Cordova Mobile Spec App to post test results and the Mobile Spec Web Portal to retrieve these results 
 
-# Group Hello World API
+# Group Record Test API
 
-# hello [/hello]
+# recordTest [/recordTest]
 
-'Hello world' endpoint.
+'Record Test' endpoint.
 
-## hello [POST] 
+## recordTest [POST] 
 
-'Hello world' endpoint.
+'Record Test' endpoint.
 
 + Request (application/json)
     + Body
