@@ -17,7 +17,8 @@ app.use('/mbaas', mbaas.mbaas);
 // Note: important that this is added just before your own Routes
 app.use(mbaas.fhmiddleware());
 
-app.use('/recordTest', require('./lib/recordTest.js')());
+app.use('/recordTest', require('./lib/recordTest')());
+app.use('/listTests', require('./lib/listTests')());
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
