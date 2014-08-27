@@ -6,7 +6,7 @@ This cloud provides APIs for the Cordova Mobile Spec App to post test results an
 
 # recordTest [/recordTest]
 
-'Record Test' endpoint.
+'Record Testz' endpoint.
 
 ## recordTest [POST] 
 
@@ -15,11 +15,21 @@ This cloud provides APIs for the Cordova Mobile Spec App to post test results an
 + Request (application/json)
     + Body
             {
-              "hello": "world"
+              "reporterId" : "Unique Device ID",
+              "deviceInfo" : {
+                // Metadata about the device submitting the test results
+              },
+              "testInfo" : [
+                // Array of Test results
+              ]
             }
 
 + Response 200 (application/json)
     + Body
+            {}
+
++ Response 500 (application/json)
+    + Body
             {
-              "msg": "Hello world"
+              // Error Object
             }
