@@ -12,15 +12,15 @@ This cloud provides APIs for the Cordova Mobile Spec App to post test results an
 
 + Request (application/json)
     + Body
-      {
-        "reporterId" : "Unique Device ID",
-        "deviceInfo" : {
-          // Metadata about the device submitting the test results
-        },
-        "testInfo" : [
-          // Array of Test results
-        ]
-      }
+        {
+          "reporterId" : "Unique Device ID",
+          "deviceInfo" : {
+            // Metadata about the device submitting the test results
+          },
+          "testInfo" : [
+            // Array of Test results
+          ]
+        }
 
 + Response 200 (application/json)
     + Body
