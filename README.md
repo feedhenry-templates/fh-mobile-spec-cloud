@@ -6,11 +6,9 @@ This cloud provides APIs for the Cordova Mobile Spec App to post test results an
 
 # recordTest [/recordTest]
 
-'Record Testz' endpoint.
+'Record Test' endpoint.
 
 ## recordTest [POST] 
-
-'Record Test' endpoint.
 
 + Request (application/json)
     + Body
