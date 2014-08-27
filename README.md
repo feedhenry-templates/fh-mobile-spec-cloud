@@ -31,3 +31,24 @@ This cloud provides APIs for the Cordova Mobile Spec App to post test results an
             {
               // Error Object
             }
+
+
+# Group List Tests API
+
+# listTests [/listTests]
+
+'List Tests' endpoint.
+
+## listTests [GET] 
+
++ Request (application/json)
+    + Body
+      {}
+
++ Response 200 (application/json)
+    + Body
+      {}
+
++ Response 500 (application/json)
+    + Body
+      {}
