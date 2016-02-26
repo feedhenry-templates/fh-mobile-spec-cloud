@@ -1,5 +1,5 @@
 {
-  "name": "fh-app",
+  "name": "fh-mobile-spec-cloud",
   "version": "0.1.1",
   "dependencies": {
     "async": "^0.9.0",
