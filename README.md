@@ -1,4 +1,5 @@
 # Mobile Spec Cloud
+[![Dependency Status](https://img.shields.io/david/feedhenry-templates/fh-mobile-spec-cloud.svg?style=flat-square)](https://david-dm.org/feedhenry-templates/fh-mobile-spec-cloud)
 
 This is the cloud app for the Mobile Spec project.
 
