@@ -3,12 +3,13 @@
   "version": "0.1.1",
   "dependencies": {
     "async": "^0.9.0",
-    "body-parser": "~1.0.2",
+    "body-parser": "~1.17.1",
     "cors": "~2.2.0",
-    "express": "~4.0.0",
+    "express": "~4.16.0",
     "fh-mbaas-api": "~7.0.9",
     "lodash": "^2.4.1",
-    "request": "2.79.0"
+    "request": "2.81.0",
+    "snyk": "^1.42.6"
   },
   "devDependencies": {
     "grunt-concurrent": "latest",
@@ -33,6 +34,9 @@
   "main": "application.js",
   "scripts": {
     "start": "node application.js",
-    "test": "grunt unit"
-  }
+    "test": "grunt unit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
